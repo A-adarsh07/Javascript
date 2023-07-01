@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays and objexts</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>this is 1</li>
+            <li>this is 2</li>
+            <li>this is 3</li>
+            <li>this is 4</li>
+        </ul>
+    </div>
+    <script>
+          let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+        let employee = {
+            name: "Harry",
+            salary: 10,
+            channel1: "CodeWithHarry",
+            "channel 2": "ProgrammingWithHarry",
+        }
+        // TO GET NAME OF EMPLOYEE THEN WRITE employee.name
+        console.log(employee);
+
+        let names = [1, 5,2, 4, "Harry", undefined];
+        let names1 = new Array(41, 2, 4, "Harry", undefined);
+        // let names = new Array(23); this will create array
+        console.log(names.length);
+        names = names.sort(); // the string elements will be sorted 
+        names.push("this is pushed");  // this string  will be added in the end
+
+        console.log(names);
+    </script>
+</body>
+</html>

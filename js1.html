@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript||strings
+    </title>
+</head>
+
+<body>
+    <div>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, necessitatibus repellat distinctio aperiam
+            illo minus nihil perferendis et corrupti quis sed asperiores iusto. Quo sequi illo aperiam repellendus earum
+            omnis.</p>
+    </div>
+
+<script>
+    let name="adarsh";
+    let channel='codewithmusic';
+    let temp=`${name} has a very good "channel" name ${channel}`;
+    console.log(temp);
+// to find length of string
+ let len=name.length;
+ console.log(`length of the name is ${len}`);
+ let str = "This is a string";
+    console.log(str);
+
+    // First occurence of a substring
+    let position = str.indexOf('is');
+    console.log(position)
+
+    // Last occurence of a substring
+    position = str.lastIndexOf('is');
+    console.log(position)
+
+    // Substring from a string
+    // let substr = str.slice(1,7);
+    // let substr = str.substring(1,7);
+    let substr1 = str.substr(1,3);
+    console.log(substr1)
+    
+    // let replaced = str.replace('string', 'Harry');
+    // console.log(str)
+    // console.log(replaced)
+
+    // console.log(str.toUpperCase());
+    // console.log(str.toLowerCase());
+    // let newString = str.concat('New String')
+    // console.log(newString)
+    // let strWithWhitespaces = "   this contains        whitespaces   ";
+    // console.log(strWithWhitespaces)
+    // console.log(strWithWhitespaces.trim())
+
+    // let char2 = str.charAt(2);
+    // let char2 = str.charCodeAt(2); // Not very important
+    // console.log(char2)
+
+    console.log(str[3]);
+
+</script>
+
+</body>
+
+</html>

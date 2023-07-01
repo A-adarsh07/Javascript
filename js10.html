@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems/jokes</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    body.dark-mode {
+        background-color: rgb(165, 190, 215);
+        color: rgb(11, 13, 13);
+
+    }
+
+    b {
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .nav-bar {
+        width: 100%;
+        overflow: hidden;
+        background-color: #333333;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        /* position: fixed; */
+        flex-flow: row wrap;
+
+
+    }
+
+    /* li {
+        float: left;
+    } */
+    li a {
+        /* width:100vh; */
+        display: flex;
+        flex-flow: column wrap;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        /* flex-shrink: 0; */
+    }
+
+    /* div .nav-bar{
+        max-width: 100%;
+    } */
+    li a:hover {
+        background-color: #111111;
+    }
+
+    #mybutton {
+        font-size: medium;
+        position: relative;
+        margin-left: auto;
+        margin-right: 10px;
+        border-radius: 12px;
+        padding: 5px;
+    }
+
+    #container {
+        width: 95vw;
+        height: 70vh;
+        display: flex;
+        border: 2px solid red;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        overflow: auto;
+        margin-top: 30px;
+        margin-left: 30px;
+
+    }
+
+    .box {
+        margin: 10px;
+        padding: 12px;
+        font-size: 15px;
+
+    }
+
+    form {
+        margin: 30px auto 10px auto;
+    }
+
+    @media screen and(max-width:600px) {
+        .container {
+            flex-direction: column;
+            flex-flow: column wrap;
+        }
+    }
+</style>
+<!--   HTML body                                         -->
+
+<body class="dark-mode">
+    <div>
+        <ul class="nav-bar">
+            <li><a href="#container">Home</a></li>
+            <li><a href="#Topics">Topics</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <button id="mybutton">Switch theme</button>
+        </ul>
+    </div>
+
+    <h1
+        style="display:flex ;justify-content: center;align-items: center;margin-top: 20px;background: rgb(176, 65, 156);">
+        Poetry</h1>
+
+    <div id="container">
+
+        <div class="box">
+            <p class="para">
+            <pre>
+                <b>poem1</b>
+                Nature's first green is gold,
+                Her hardest hue to hold.
+                Her early leaf's a flower;
+                But only so an hour.
+                Then leaf subsides to leaf.
+                So Eden sank to grief,
+                So dawn goes down to day.
+                Nothing gold can stay.</pre>
+            </p>
+        </div>
+        <div class="box">
+            <p class="para">
+            <pre>
+                <b>poem2</b>
+                Some feelings are shallow, some feelings are deep.
+                Some make us smile, some make us weep.
+                Some we love, some we don't.
+                Some we'll savor, some we won't.
+                Some grounding, some uplifting,
+                Some long-lasting, some constantly shifting.
+                No matter what feelings I'm feeling today,
+                I know tomorrow is only a day away.
+                </pre>
+            </p>
+        </div>
+        <div class="box">
+            <p class="para">
+            <pre>
+                <b>poem3</b> 
+                Despite the storms,
+                beauty arrives like
+                it was always going to.
+                Despite the darkness,
+                the light returns.
+                Despite your loss,
+                your heart will be
+                full again.
+                Despite the breaking,
+                your heart will feel
+                like it belongs in the
+                land of joy once more.
+                This is how it will
+                always be. Keep living.
+                </pre>
+            </p>
+        </div>
+    </div>
+
+    <h1 style="display:flex ;justify-content: center;align-items: center;margin:20px 0 5px 0;">JOKES</h1>
+
+    <div id="container">
+
+        <div class="box">
+            <p class="para">
+            <pre>
+                <b>poem1</b>
+                Nature's first green is gold,
+                Her hardest hue to hold.
+                Her early leaf's a flower;
+                But only so an hour.
+                Then leaf subsides to leaf.
+                So Eden sank to grief,
+                So dawn goes down to day.
+                Nothing gold can stay.</pre>
+            </p>
+        </div>
+        <div class="box">
+            <p class="para">
+            <pre>
+                <b>poem2</b>
+                Some feelings are shallow, some feelings are deep.
+                Some make us smile, some make us weep.
+                Some we love, some we don't.
+                Some we'll savor, some we won't.
+                Some grounding, some uplifting,
+                Some long-lasting, some constantly shifting.
+                No matter what feelings I'm feeling today,
+                I know tomorrow is only a day away.
+                </pre>
+            </p>
+        </div>
+        <div class="box">
+            <p class="para">
+            <pre>
+                <b>poem3</b> 
+                Despite the storms,
+                beauty arrives like
+                it was always going to.
+                Despite the darkness,
+                the light returns.
+                Despite your loss,
+                your heart will be
+                full again.
+                Despite the breaking,
+                your heart will feel
+                like it belongs in the
+                land of joy once more.
+                This is how it will
+                always be. Keep living.
+                </pre>
+            </p>
+        </div>
+    </div>
+
+
+        <form id="contact" action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    
+    <script>
+        const button = document.getElementById("mybutton");
+        button.addEventListener("click", () => {
+            document.body.classList.toggle("dark-mode");
+        })
+
+        // color change when mouse hover on mode button
+        button.addEventListener("mouseover", (event) => {
+            event.target.style.background = "yellow";
+
+            setTimeout(() => {
+                event.target.style.background = "";
+            }, 500);
+        },
+            false
+        );
+
+
+    </script>
+</body>
+
+</html>

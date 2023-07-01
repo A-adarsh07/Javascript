@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope| if-else conditions</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+    <script>
+        //******** VAR IS GLOBAL VARIABLE AND LET IS BLOCK LEVEL VARIABLE
+        let a="6";
+        {
+            let a="6t";
+            console.log(a);
+        }
+        console.log(a);
+        // *********the VALUE INSIDE THE BLOCK WILL PRINT 6T AND THE VALUE OUTSIDE WILL PRINT 6
+        const b="siri";
+        //CANT CHANGE THIS CONST VALUE
+        console.log(a=b);
+        // the value of a will be changed now.
+        console.log(a);
+
+    //   ELSE IF*********
+    let age =prompt('how old are you?'," ");
+    console.log(age);
+    if(age>18){
+        console.log("you can drink beer");
+    }
+    else if(age>12 && age<18){
+        console.log("you can drink cold drink");
+    }
+    else{
+        console.log("you cant drink cold drink");
+    }
+    // SWITCH CASES
+    let age1=prompt('your age?'," ");
+    // alert(`you are ${age1} years old`);
+    console.log(age1);
+    switch(age1){
+        case 16:
+            console.log("you can drink cold drink")
+           break;
+        case 18:
+            console.log("you can drink beer")
+           break;
+        case (age1==21):
+            console.log("you can drink beer and whiskey")
+           break;
+        case 34:
+            console.log("you can drink whatever you want")
+           break;
+       default:
+        console.log("ask the permission first");
+        break;
+    }
+
+
+        </script>
+</body>
+</html>
