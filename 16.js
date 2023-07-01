@@ -59,3 +59,28 @@ const words = ["spray", "limit", "elite", "exuberant", "destruction", "present"]
 const longWords = words.filter(word => word.length > 6);
 console.log(longWords);
 // longWords is ["exuberant", "destruction", "present"]
+
+                        // REDUCE METHOD
+    // The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+
+    const total = [0, 1, 2, 3].reduce((sum, value) => sum + value, 1);
+    console.log(total);
+
+    const sum=[11,22,32,455,65];
+    const totalsum= sum.reduce(function(accumulator,x){
+        return accumulator+=x;
+    });
+    console.log(`The Total Sum of the Array Elements Is ${totalsum}`);
+    
+    // we can also set the accumulator value to anything
+    // shopping cart example
+    let cart=[
+        {productid: 1,item:"mobile", price:12000},
+        {productid: 2,item:"ac", price:10000},
+        {productid: 3,item:"tv", price:56000},
+    ]
+
+    let totalprice=cart.reduce((accumulator,x)=>{
+        return accumulator+=x.price;
+    },0);   // here we set the value of accumulator to 0
+        console.log(totalprice);
